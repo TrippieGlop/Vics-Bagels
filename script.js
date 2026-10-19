@@ -1,0 +1,4 @@
+document.addEventListener("DOMContentLoaded",function(){var toggle=document.getElementById("navToggle");var nav=document.getElementById("mainNav");if(toggle&&nav){toggle.addEventListener("click",function(){nav.classList.toggle("open");});nav.querySelectorAll("a").forEach(function(link){link.addEventListener("click",function(){nav.classList.remove("open");});});}
+var year=document.getElementById("year");if(year)year.textContent=new Date().getFullYear();
+var badge=document.querySelector(".hero-badge");if(badge){var now=new Date();var day=now.getDay();var minutes=now.getHours()*60+now.getMinutes();var open=false;if(day===1){open=false;}else if(day===0){open=minutes>=300&&minutes<720;}else{open=minutes>=300&&minutes<780;}
+if(open){badge.classList.remove("closed");badge.innerHTML='<span class="dot"></span> Open now &#183; fresh bagels all day';}else{badge.classList.add("closed");badge.innerHTML='<span class="dot"></span> Closed right now &#183; see hours below';}}});
