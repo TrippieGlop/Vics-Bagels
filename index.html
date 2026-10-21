@@ -1,32 +1,25 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Vic's Bagels | Fresh Hand-Rolled Bagels in Bethlehem, PA</title><link rel="canonical" href="https://vicsbagelspa.com/index.html"><meta name="description" content="Vic's Bagels in Bethlehem, PA — hand-rolled bagels, made-to-order breakfast and lunch, nine homemade cream cheese flavors. Open Tuesday through Sunday."><meta name="theme-color" content="#2B1B12"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="/style.css">
 <style>
-.hero-v4{position:relative;min-height:720px;display:grid;grid-template-columns:1.05fr 1fr;background:var(--cream);overflow:hidden}
-.hero-v4::before{content:"";position:absolute;inset:0;background:
-  radial-gradient(ellipse 60% 50% at 18% 15%,rgba(255,255,255,.55),transparent 65%),
-  radial-gradient(ellipse 70% 60% at 85% 10%,rgba(232,150,30,.10),transparent 60%),
-  linear-gradient(115deg,transparent 40%,rgba(43,27,18,.035) 46%,transparent 52%),
-  linear-gradient(115deg,transparent 55%,rgba(43,27,18,.03) 60%,transparent 66%);
-  pointer-events:none}
-.hero-v4 .hero-left{position:relative;z-index:1;display:flex;align-items:center;padding:64px 40px 64px 90px}
-.hero-v4 .hero-content{max-width:600px}
-.hero-v4 h1{font-size:clamp(2.6rem,5.4vw,4.4rem);line-height:1.04;margin-bottom:.32em;color:var(--crust,#2B1B12)}
-.hero-v4 .lede{font-size:1.2rem;color:var(--crust-soft,#4A3323);max-width:44ch}
-.hero-v4 .cta-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:30px}
-.hero-v4 .cta-row .btn{height:76px;padding:0 32px;display:inline-flex;align-items:center;font-size:1.05rem}
-.hero-v4 .hero-right{position:relative;z-index:1;display:flex;justify-content:center;align-items:flex-end;padding-top:10px}
-.hero-v4 .hero-right img{height:94%;max-height:660px;width:auto;object-fit:contain;filter:drop-shadow(0 18px 24px rgba(43,27,18,.22))}
-@media (max-width:860px){
-  .hero-v4{grid-template-columns:1fr;min-height:auto;padding-bottom:20px}
-  .hero-v4 .hero-left{padding:48px 32px 8px;justify-content:center;text-align:center}
-  .hero-v4 .hero-content{max-width:100%}
-  .hero-v4 .lede{margin-left:auto;margin-right:auto}
-  .hero-v4 .cta-row{justify-content:center}
-  .hero-v4 .hero-right{padding:20px 20px 36px}
-  .hero-v4 .hero-right img{height:auto;width:72%;max-width:320px}
+.hero-v4{position:relative;padding:0;background:var(--cream,#FFF6E9);overflow:hidden}
+.hero-v4 .hero-right{position:relative;z-index:0}
+.hero-v4 .hero-right img{width:100%;height:auto;max-width:100%;display:block;object-fit:contain}
+.hero-v4 .hero-left{position:absolute;z-index:1;top:0;bottom:0;left:0;width:min(36%,520px);display:flex;align-items:center;padding:32px 8px 36px clamp(24px,4vw,72px)}
+.hero-v4 .hero-content{max-width:34rem}
+.hero-v4 h1{font-size:clamp(2.35rem,3.7vw,4.05rem);line-height:1.02;letter-spacing:-0.025em;margin:0 0 .3em;color:var(--crust,#2B1B12);font-weight:500}
+.hero-v4 .lede{font-size:clamp(1.02rem,1.3vw,1.18rem);line-height:1.45;color:var(--crust-soft,#4A3323);max-width:30ch;margin:0}
+.hero-v4 .cta-row{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:26px}
+.hero-v4 .cta-row .btn{min-height:54px;padding:0 24px;display:inline-flex;align-items:center;font-size:1rem}
+@media (max-width:1040px){
+  .hero-v4{display:flex;flex-direction:column}
+  .hero-v4 .hero-left{position:relative;width:auto;padding:48px 24px 20px}
+  .hero-v4 .hero-content{max-width:38rem}
+  .hero-v4 h1{font-size:clamp(2.45rem,8vw,3.5rem)}
+  .hero-v4 .lede{max-width:40ch}
+  .hero-v4 .hero-right img{width:100%;height:auto}
 }
 @media (max-width:480px){
-  .hero-v4 .cta-row .btn{height:64px;padding:0 22px;font-size:.98rem}
-  .hero-v4 .hero-right img{width:85%}
+  .hero-v4 .hero-left{padding:36px 16px 12px}
+  .hero-v4 .cta-row .btn{min-height:48px;padding:0 18px;font-size:.98rem}
 }
 .feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:40px}
 .feature-grid .card{background:var(--cream-dim,#FBEBD3);border-radius:16px;padding:28px 22px}
@@ -65,7 +58,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <img src="/hero-sign.webp" alt="Hanging wooden sign reading Vic's Bagels, Forget The Rest, Try The Best, Est. 2011" width="420" height="751">
+    <img src="/hero%20banner.PNG" alt="Hanging wooden sign reading Vic's Bagels, Forget The Rest, Try The Best, Est. 2011" width="1672" height="941">
   </div>
 </section>
 
@@ -84,7 +77,7 @@
 <section>
   <div class="wrap">
     <div class="story-v2">
-      <img src="/home-counter.jpg" alt="Customers ordering at the Vic's Bagels counter" width="760" height="505">
+      <img src="/vicsbgls.jpg" alt="Customers ordering at the Vic's Bagels counter" width="760" height="505">
       <div>
         <h2>The best bagel shop in Bethlehem</h2>
         <p>Vic's Bagels has been a neighborhood morning stop since 2011 — hand-rolled bagels, fresh-brewed coffee and a counter crew that knows plenty of regulars by name.</p>
@@ -93,9 +86,9 @@
       </div>
     </div>
     <div class="peek-row">
-      <figure><img src="/home-storefront.jpg" alt="Vic's Bagels storefront"><figcaption>Our storefront</figcaption></figure>
-      <figure><img src="/home-case.jpg" alt="Bagel display case with flavor labels"><figcaption>Baked fresh daily</figcaption></figure>
-      <figure><img src="/home-dining.jpg" alt="Dining area at Vic's Bagels"><figcaption>Dine in or carry out</figcaption></figure>
+      <figure><img src="/front.jpg" alt="Vic's Bagels storefront"><figcaption>Our storefront</figcaption></figure>
+      <figure><img src="/bagels.jpg" alt="Baskets of bagels labeled by flavor"><figcaption>Baked fresh daily</figcaption></figure>
+      <figure><img src="/side.jpg" alt="Side view of the dining room with people at the counter and tables"><figcaption>Dine in or carry out</figcaption></figure>
     </div>
   </div>
 </section>
