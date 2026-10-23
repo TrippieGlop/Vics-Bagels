@@ -71,3 +71,6 @@ button[type="submit"]{width:100%;justify-content:center;border:none;font-size:1r
 .content-page{padding:64px 0 100px;}.content-page h2{margin-top:1.6em;}.content-page ul{padding-left:1.2em;}
 .center-page{min-height:60vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:80px 24px;}.center-page .wrap{max-width:520px;}
 .skip-link{position:absolute;left:-999px;background:var(--crust);color:var(--cream);padding:12px 18px;z-index:100;}.skip-link:focus{left:0;top:0;}
+.social-btn[href*="facebook"]{background:#1877F2;border-color:#1877F2;color:#fff!important;}.social-btn[href*="facebook"]:visited{color:#fff!important;}.social-btn[href*="facebook"]:hover{background:#0F5FCC;border-color:#0F5FCC;color:#fff!important;transform:translateY(-2px);}
+.social-btn[href*="yelp"]{background:#D32323;border-color:#D32323;color:#fff!important;}.social-btn[href*="yelp"]:visited{color:#fff!important;}.social-btn[href*="yelp"]:hover{background:#A91B1B;border-color:#A91B1B;color:#fff!important;transform:translateY(-2px);}
+.social-btn{transition:.15s;box-shadow:0 4px 12px rgba(0,0,0,.25);}
