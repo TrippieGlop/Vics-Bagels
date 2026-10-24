@@ -9,6 +9,12 @@
 .hero-v4 .lede{font-size:clamp(1.02rem,1.3vw,1.18rem);line-height:1.45;color:var(--crust-soft,#4A3323);max-width:30ch;margin:0}
 .hero-v4 .cta-row{display:flex;flex-wrap:wrap;gap:12px 14px;margin-top:26px}
 .hero-v4 .cta-row .btn{min-height:54px;padding:0 24px;display:inline-flex;align-items:center;font-size:1rem}
+@media (min-width:1041px){
+  .hero-v4{min-height:calc(100vh - 81px);min-height:calc(100dvh - 81px)}
+  .hero-v4 .hero-right{position:absolute;inset:0;display:flex;align-items:center;justify-content:flex-end}
+  .hero-v4 .hero-right img{width:auto;height:auto;max-width:100%;max-height:100%}
+  .hero-v4 .hero-left{position:relative;min-height:calc(100vh - 81px);min-height:calc(100dvh - 81px)}
+}
 @media (max-width:1040px){
   .hero-v4{display:flex;flex-direction:column}
   .hero-v4 .hero-left{position:relative;width:auto;padding:48px 24px 20px}
@@ -66,10 +72,10 @@
   <div class="wrap">
     <div class="section-head"><h2>What we're known for</h2><p>Everything made fresh, every single morning.</p></div>
     <div class="feature-grid">
-      <div class="card"><h3>Hand-Rolled Daily</h3><p>Every bagel is rolled, boiled and baked fresh in-house, never shipped frozen.</p></div>
-      <div class="card"><h3>A Wall Of Flavors</h3><p>From plain to everything, jalapeño to chocolate chip — there's a bagel for everyone.</p></div>
+      <div class="card"><h3>Hand-Rolled Daily</h3><p>Rolled, boiled and baked fresh right here, every day.</p></div>
+      <div class="card"><h3>Find Your Favorite</h3><p>Plain, everything, jalapeño or chocolate chip. Go with your usual or try something new—there’s a bagel for everybody.</p></div>
       <div class="card"><h3>9 Cream Cheese Flavors</h3><p>Homemade spreads, whipped fresh to pair with any bagel you pick.</p></div>
-      <div class="card"><h3>Breakfast &amp; Lunch</h3><p>Egg sandwiches, deli classics and made-to-order platters, all day long.</p></div>
+      <div class="card"><h3>Breakfast &amp; Lunch</h3><p>Egg sandwiches, omelets, deli favorites and more, made to order.</p></div>
     </div>
   </div>
 </section>
@@ -80,8 +86,8 @@
       <img src="/vicsbgls.jpg" alt="Customers ordering at the Vic's Bagels counter" width="760" height="505">
       <div>
         <h2>The best bagel shop in Bethlehem</h2>
-        <p>Vic's Bagels has been a neighborhood morning stop since 2011 — hand-rolled bagels, fresh-brewed coffee and a counter crew that knows plenty of regulars by name.</p>
-        <p>Open Tuesday through Sunday, 2910 Easton Ave, Bethlehem, PA. Walk in, call ahead, or reserve a pickup for a bigger order.</p>
+        <p>Since 2011, Vic’s has been a neighborhood stop for hand-rolled bagels, fresh coffee, and made-to-order breakfast and lunch.</p>
+        <p>Find us at 2910 Easton Avenue in Bethlehem, Tuesday through Sunday. Stop in for breakfast or lunch, or call ahead for a larger order.</p>
         <a class="btn btn-outline" href="/about.html">Our story</a>
       </div>
     </div>
