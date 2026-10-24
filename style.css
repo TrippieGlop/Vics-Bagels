@@ -95,11 +95,11 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .home-phone .m-food{padding:26px 20px 0;}
   .home-phone section:last-child{padding-bottom:28px;}
   .home-phone h2{font-size:1.55rem;line-height:1.12;margin:0;}
-  .home-phone .m-food h2{font-size:clamp(1.62rem,7.1vw,1.8rem);line-height:1.1;font-weight:700;}
+  .home-phone .m-food h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.47rem,6.46vw,1.64rem);line-height:1.1;font-weight:700;}
   .home-phone h3{font-size:1.2rem;line-height:1.15;margin:0 0 6px;}
-  .home-phone .m-food h3{font-size:1.3rem;line-height:1.15;margin:0 0 4px;font-weight:700;}
+  .home-phone .m-food h3{font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;line-height:1.15;margin:0 0 4px;font-weight:700;}
   .home-phone p{max-width:none;margin:0;font-size:16px;line-height:1.4;color:var(--crust-soft);}
-  .home-phone .m-food p{font-size:15.5px;line-height:1.4;}
+  .home-phone .m-food p{font-family:Georgia,"Times New Roman",serif;font-size:15px;line-height:1.4;}
   .m-rows{display:flex;flex-direction:column;gap:22px;margin-top:18px;}
   .m-row{display:grid;grid-template-columns:minmax(0,47%) minmax(0,1fr);gap:15px;align-items:center;}
   .m-row.m-flip{grid-template-columns:minmax(0,1fr) minmax(0,47%);}
