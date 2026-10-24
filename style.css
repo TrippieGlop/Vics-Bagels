@@ -80,18 +80,13 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .about-page .card p{font-size:.88rem}
 }
 @media (min-width:1041px){
-  .about-page .wrap,
   .home-page .wrap,
   .contact-page .wrap{max-width:min(1240px,calc(100vw - 72px));}
-  .about-page .story{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:40px;align-items:center;}
-  .about-page .story.reverse{grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);}
-  .about-page .story + .story{margin-top:40px;}
-  .about-page .story img,
   .home-page .story-v2 img,
   .home-page .peek-row img{width:100%;height:auto;object-fit:contain;}
-  .about-page .story h2,
   .home-page .story-v2 h2{font-size:clamp(1.9rem,2vw,2.3rem);}
-  .home-page .story-v2{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:40px;align-items:center;}
+  .home-page .story-v2{grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:40px;align-items:center;}
+  .home-page .peek-row{margin-top:84px;}
   .contact-page .contact-grid{gap:40px;align-items:start;}
   .contact-page .map-frame iframe{width:100%;height:auto;aspect-ratio:3/2;}
 }
