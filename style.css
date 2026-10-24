@@ -39,12 +39,20 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
 .story{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;}@media (max-width:860px){.story{grid-template-columns:1fr;gap:24px;}}
 .story img{border-radius:20px;box-shadow:var(--shadow);width:100%;height:auto;}.story.reverse .img-col{order:2;}@media (max-width:860px){.story.reverse .img-col{order:0;}}.story + .story{margin-top:70px;}@media (max-width:860px){.story + .story{margin-top:44px;}}
 @media (min-width:1041px){
-  .about-page .wrap{max-width:min(1240px,calc(100vw - 72px));}
+  .about-page .wrap,
+  .home-page .wrap,
+  .contact-page .wrap{max-width:min(1240px,calc(100vw - 72px));}
   .about-page .story{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:40px;align-items:center;}
   .about-page .story.reverse{grid-template-columns:minmax(0,1.22fr) minmax(0,.78fr);}
   .about-page .story + .story{margin-top:40px;}
-  .about-page .story img{width:100%;height:auto;object-fit:contain;}
-  .about-page .story h2{font-size:clamp(1.9rem,2vw,2.3rem);}
+  .about-page .story img,
+  .home-page .story-v2 img,
+  .home-page .peek-row img{width:100%;height:auto;object-fit:contain;}
+  .about-page .story h2,
+  .home-page .story-v2 h2{font-size:clamp(1.9rem,2vw,2.3rem);}
+  .home-page .story-v2{grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:40px;align-items:center;}
+  .contact-page .contact-grid{gap:40px;align-items:start;}
+  .contact-page .map-frame iframe{width:100%;height:auto;aspect-ratio:3/2;}
 }
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}@media (max-width:720px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}@media (max-width:480px){.gallery-grid{grid-template-columns:1fr;}}.gallery-grid img{border-radius:14px;width:100%;height:100%;object-fit:cover;aspect-ratio:4/3;}
 .menu-block{margin-bottom:64px;}.menu-block-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;border-bottom:2px solid var(--crust);padding-bottom:10px;margin-bottom:6px;}
