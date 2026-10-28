@@ -47,16 +47,21 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
 .home-cta .cta-row{justify-content:center;margin-top:24px}
 .home-cta .btn-outline{border-color:var(--cream);color:var(--cream)}
 @media (max-width:860px){
-  .contact-page .contact-grid{gap:22px}
-  .contact-page .info-list{margin-bottom:14px}
+  .contact-page .section-head{margin-bottom:24px}
+  .contact-page .contact-grid{display:flex;flex-direction:column;gap:0}
+  .contact-page .contact-grid > div{display:contents}
+  .contact-page .info-list{display:contents;margin:0}
   .contact-page .social-row{display:none}
   .contact-page .info-list li{padding:10px 0}
-  .contact-page .map-frame{margin-top:14px}
+  .contact-page .hours-item{order:1;margin:0 0 28px;padding:0;border-bottom:none}
+  .contact-page .order-form{order:2;margin:0 0 28px}
+  .contact-page .info-list li:not(.hours-item){order:3}
+  .contact-page .map-frame{order:4;margin-top:22px}
   .contact-page .map-frame iframe{height:200px}
 }
 @media (max-width:720px){
   .contact-page section{padding:32px 0}
-  .contact-page .section-head{margin-bottom:18px}
+  .contact-page .section-head{margin-bottom:24px}
 }
 @media (max-width:860px){
   .about-page .wrap{padding-left:20px;padding-right:20px}
@@ -98,7 +103,7 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .about-page .card{padding:12px 14px;border-radius:12px}
   .about-page .card h3{font-size:19px;line-height:1.2;margin:0 0 4px}
   .about-page .card p{font-size:16px;line-height:1.5}
-  .about-page .cta-band{padding:24px 0 22px}
+  .about-page .cta-band{padding:24px 0 46px}
   .about-page .cta-band h2{font-size:24px;line-height:1.2;margin:0 0 6px}
   .about-page .cta-band p{max-width:none;margin:0;font-size:16px;line-height:1.45}
   .about-page .cta-band .hero-actions{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:14px}
@@ -167,7 +172,8 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .home-phone .m-shop-copy p{font-family:Georgia,"Times New Roman",serif;font-weight:400;font-size:16px;line-height:1.6;text-align:left;}
   .m-more{display:inline-flex;align-items:center;min-height:44px;margin-top:6px;font-weight:600;font-size:1rem;color:var(--yolk-deep);text-decoration:none;}
   .m-more:hover{color:var(--crust);}
-  .m-food .m-more{margin-top:10px;}
+  .m-food .m-more{margin-top:16px;padding:11px 18px;border-radius:999px;background:var(--yolk);color:var(--crust);font-family:Georgia,"Times New Roman",serif;font-weight:700;font-size:16px;box-shadow:0 4px 12px rgba(43,27,18,.12)}
+  .m-food .m-more:hover{background:var(--yolk-deep);color:var(--crust)}
   .m-map-link{display:block;border-radius:16px;color:inherit;text-decoration:none;}
   .m-map-link:hover{text-decoration:none;}
   .m-map-link:focus-visible{outline:2px solid var(--yolk-deep);outline-offset:3px;}
