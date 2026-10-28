@@ -62,14 +62,14 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .about-page .wrap{padding-left:20px;padding-right:20px}
   .about-page .about-intro{padding:20px 0 0}
   .about-page .about-intro .section-head{margin-bottom:0}
-  .about-page .about-intro h2{font-size:26px;line-height:1.15;margin:0 0 6px}
+  .about-page .about-intro h2{font-size:26px;line-height:1.15;margin:0 0 22px}
   .about-page .about-intro p{max-width:none;margin:0;font-size:16px;line-height:1.5}
-  .about-page .about-stories{padding:40px 0 4px}
+  .about-page .about-stories{padding:28px 0 4px}
   .about-page .story{grid-template-columns:32% minmax(0,1fr);grid-template-areas:none;column-gap:15px;row-gap:0;align-items:start}
   .about-page .story .img-col,
-  .about-page .story.reverse .img-col{order:0;grid-area:auto;min-width:0}
+  .about-page .story.reverse .img-col{order:0;grid-area:auto;min-width:0;position:relative;width:100%;aspect-ratio:1/1;overflow:hidden;border-radius:10px;box-shadow:0 4px 12px rgba(43,27,18,.12)}
   .about-page .story > div{display:block;min-width:0}
-  .about-page .story img{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:10px;box-shadow:0 4px 12px rgba(43,27,18,.12)}
+  .about-page .story img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:center;border-radius:10px;box-shadow:none}
   .about-page .story h2{grid-area:auto;font-size:19px;line-height:1.2;margin:0 0 6px}
   .about-page .story p{grid-area:auto;max-width:none;margin:0;font-size:16px;line-height:1.5}
   .about-page .story + .story{margin-top:20px;padding-top:20px;border-top:1px solid var(--line)}
@@ -109,6 +109,11 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .about-page p,
   .contact-page .section-head p,
   .contact-page .info-list{font-family:Georgia,"Times New Roman",serif}
+}
+@media (max-width:480px){
+  .about-page .story{grid-template-columns:46% minmax(0,1fr);column-gap:12px;align-items:center}
+  .about-page .story h2{font-size:17px;line-height:1.25}
+  .about-page .story p{font-size:15px;line-height:1.4}
 }
 .hero-title-phone,.home-phone,.home-m-links{display:none}
 @media (max-width:860px){
