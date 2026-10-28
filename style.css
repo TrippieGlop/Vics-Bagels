@@ -53,10 +53,10 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .contact-page .info-list{display:contents;margin:0}
   .contact-page .social-row{display:none}
   .contact-page .info-list li{padding:10px 0}
-  .contact-page .hours-item{order:1;margin:0 0 28px;padding:0;border-bottom:none}
+  .contact-page .hours-item{order:3;margin:0 0 28px;padding:0;border-bottom:none}
   .contact-page .hours-item div{line-height:2.05}
-  .contact-page .order-form{order:2;margin:0 0 28px}
-  .contact-page .info-list li:not(.hours-item){order:3}
+  .contact-page .order-form{order:1;margin:0 0 28px}
+  .contact-page .info-list li:not(.hours-item){order:2}
   .contact-page .map-frame{order:4;margin-top:22px}
   .contact-page .map-frame iframe{height:200px}
   .contact-page > section{padding-top:20px !important}
