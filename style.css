@@ -59,6 +59,7 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .contact-page .info-list li:not(.hours-item){order:3}
   .contact-page .map-frame{order:4;margin-top:22px}
   .contact-page .map-frame iframe{height:200px}
+  .contact-page > section{padding-top:20px !important}
 }
 @media (max-width:720px){
   .contact-page section{padding:32px 0}
@@ -104,7 +105,7 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .about-page .card{padding:12px 14px;border-radius:12px}
   .about-page .card h3{font-size:19px;line-height:1.2;margin:0 0 4px}
   .about-page .card p{font-size:16px;line-height:1.5}
-  .about-page .cta-band{padding:72px 0 46px}
+  .about-page .cta-band{display:none}
   .about-page .cta-band h2{font-size:24px;line-height:1.2;margin:0 0 6px}
   .about-page .cta-band p{max-width:none;margin:0;font-size:16px;line-height:1.45}
   .about-page .cta-band .hero-actions{flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:14px}
@@ -215,11 +216,11 @@ nav.main-nav.open{transform:translateX(0);}nav.main-nav a{color:var(--cream);fon
   .home-footer h3{color:var(--cream);font-size:1.05rem;margin-bottom:.35em;}
   .home-footer p{line-height:1.45;margin-bottom:.35em;}
   .home-footer .footer-bottom{padding-top:12px;}
-  .home-footer .social-btn,
-  .home-footer .social-btn[href*="facebook"],
-  .home-footer .social-btn[href*="yelp"]{background:transparent!important;border-color:rgba(255,246,233,.42);color:#FFF6E9!important;box-shadow:none;padding:8px 14px;font-weight:600;}
-  .home-footer .social-btn:hover{background:rgba(255,246,233,.08)!important;color:#FFF6E9!important;}
-  .home-footer .social-btn{min-height:44px;}
+  .home-footer .social-btn{padding:8px 14px;font-weight:600;min-height:44px;}
+  .home-footer .social-btn[href*="facebook"]{background:#1877F2!important;border-color:#1877F2;color:#fff!important;}
+  .home-footer .social-btn[href*="yelp"]{background:#D32323!important;border-color:#D32323;color:#fff!important;}
+  .home-footer .social-btn[href*="facebook"]:hover{background:#0F5FCC!important;color:#fff!important;}
+  .home-footer .social-btn[href*="yelp"]:hover{background:#A91B1B!important;color:#fff!important;}
   .home-footer .footer-grid > div:first-child > p:not(.home-m-links),
   .home-footer .footer-plain-contact{display:none;}
   .home-footer .home-m-links{display:flex;flex-wrap:wrap;gap:0 16px;margin:0;}
